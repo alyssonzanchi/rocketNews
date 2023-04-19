@@ -4,20 +4,22 @@
     box-sizing: border-box;
 }
 
+html,
 body {
-    height: 780px;
+    height: 100vh;
     background-color: #121214;
     background-image: url("assets/read_news.jpg");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 720px 780px;
-    margin-left: 36px;
+    background-size: 65% 100vh;
+    margin-left: 27px;
+    font-size: 62.5%;
 }
 
 #logo {
     width: 389px;
     height: 94px;
-    margin-top: 50px;
+    margin-top: 10%;
     margin-bottom: 92px;
 }
 
@@ -25,14 +27,14 @@ h1 {
     font-family: 'Work Sans', sans-serif;
     color: #04D361;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 h2 {
     font-family: 'League Spartan', sans-serif;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-top: 9px;
     margin-bottom: 9px;
 }
@@ -41,8 +43,8 @@ span {
     font-family: 'League Spartan', sans-serif;
     color: #FFFFFF;
     font-weight: 400; 
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
 }
 
 form {
@@ -50,6 +52,14 @@ form {
     font-family: 'League Spartan', sans-serif;
     color: #A8A8A8;
     font-weight: 700;
+}
+
+form span {
+    font-family: 'League Spartan', sans-serif;
+    color: #A8A8A8;
+    font-weight: bold; 
+    font-size: 1.4rem;
+    line-height: 1.9rem;
 }
 
 .form {
@@ -83,11 +93,62 @@ input {
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
     color: #8257e5;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 .link img {
     margin-left: 5px;
     width: 24px;
     height: 24px;
+}
+
+@media (max-width: 1440px) {
+    html,
+    body {
+        background-size: 50% 100vh;
+    }
+}
+
+@media (max-width: 1024px) {
+    html,
+    body {
+        background-size: 57% 100vh;
+        font-size: 50%;
+    }
+
+    input {
+        width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        background-image: none;
+    }
+    
+    input {
+        width: 500px;
+    }
+    
+    #logo {
+        margin-bottom: 10%;
+    }
+}
+
+@media (max-width: 320px) {
+    html,
+    body {
+        font-size: 30%;
+    }
+
+    #logo {
+        width: 200px;
+        margin-top: 10%;
+    }
+
+    input {
+        width: 20%;
+    }
+
 }
